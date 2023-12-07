@@ -1,0 +1,66 @@
+print("String Functions")
+print("****** ******")
+print("1.Upper")
+print("2.Lower")
+print("3.Capitalize")
+print("4.Swapcase")
+print("5.Split")
+print("6.Replace")
+print("7.Alphabet or not")
+print("8.Counting the length of string")
+print("9.Title for a string")
+print("10.Zerofill")
+
+boolean = True
+while boolean:
+    s = input("Enter a string: ")
+    a = int(input("Enter a choice:"))
+
+    if a == 1:
+        print("Function chosen: Upper")
+        print("Answer" + " " * 2 + s.upper())
+
+    elif a == 2:
+        print("Function chosen: Lower")
+        print("Answer" + " " * 2 + s.lower())
+
+    elif a == 3:
+        print("Function chosen: Capitalize")
+        print("Answer" + " " * 2 + s.capitalize())
+
+    elif a == 4:
+        print("Function chosen: Swapcase")
+        print("Answer" + " " * 2 + s.swapcase())
+
+    elif a == 5:
+        print("Function chosen: Split")
+        li = s.split()
+        print("Answer" + " " * 2)
+        print(li)
+
+    elif a == 6:
+        print("Function chosen: Replace")
+        b = input("Enter the string to be replaced: ")
+        c = input("Enter the replace string: ")
+        print("Answer" + " " * 2 + s.replace(b, c))
+
+    elif a == 7:
+        print("Function chosen: Alphabet or not")
+        print("Answer" + " " * 2 + str(s.isalpha()))
+
+    elif a == 8:
+        print("Function chosen: length")
+        print("Answer" + " " * 2 + str(len(s)))
+
+    elif a == 9:
+        print("Function chosen: Title")
+        print("Answer" + " " * 2 + s.title())
+
+    elif a == 10:
+        print("Function chosen: Zerofill")
+        print("Answer" + " " * 2 + s.zfill(len(s) + 4))
+
+    choice = input("Do you want to continue, press yes or no: ")
+
+    if choice.lower() == "no":
+         boolean = False
