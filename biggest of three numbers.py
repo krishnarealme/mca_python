@@ -1,0 +1,5 @@
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+z=int(input("Enter third number: "))
+max_number=max(x,y,z)
+print(f"The biggest of three number is :{max_number}")
