@@ -1,0 +1,9 @@
+# To convert an integer to string
+a=77
+b=str(a)
+print("Integer to string: ",b)
+
+#To convert string to an integer
+a_num="77"
+b_num=int(a_num)
+print("String to integer: ",b_num)
